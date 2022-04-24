@@ -23,6 +23,9 @@ header{
 .container div + div{
     margin-left: 32px;
 }
+.container{
+    padding: 20px 0;
+}
 header h1{
     font-weight: normal;
     font-size: 24px;
@@ -60,4 +63,13 @@ footer{
     padding: 60px 0;
     text-align: center;
     color: #aaa;
+}
+.animate{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .3s;
+}
+.animate.appear{
+    opacity: 1;
+    transform: none;
 }
